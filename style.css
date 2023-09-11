@@ -43,7 +43,7 @@ nav a:hover{
 }
 
 header #user{
-    height: 55px;
+    height: 51px;
     width: 20em;
     border-radius: 30px;
     background: #CCE8E9;
@@ -54,35 +54,40 @@ header #user{
 
 header .acc{
     border-radius: 30px;
-    font-weight: bold;
     border-style: none;
     background: #5ABCC4;
     color: #CCE8E9;
     font-size: 1.4em;
+    text-align: center;
     margin-left: 4px;
     padding: 9px 20px;
     cursor: pointer;
+    height: 44px;
 }
 
 header .log{
     border-radius: 30px;
-    font-weight: bold;
     border-style: none;
     background: none;
     color: #5ABCC4;
     font-size: 1.4em;
+    text-align: center;
     margin-right: 4px;
     padding: 9px 20px;
     cursor: pointer;
+    height: 44px;
 }
 
 header .acc:hover{
     background-color: #0F3B49;
+    color: aliceblue;
+    font-weight: 100;
 }
 
 header .log:hover{
     background-color: #0F3B49;
     color: #CCE8E9;
+    font-weight: 100;
 }
 
 
@@ -167,8 +172,8 @@ header .log:hover{
 
 footer{
     background-color: #0F3B49;
-    padding-left: 3.5em;
-    padding-right: 3.5em;
+    padding: 0 3.5em 0 3.5em;
+    margin-top: 9em;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -262,23 +267,24 @@ footer form button{
 h2{
     width: 100%;
     font-family: Racing Sans One;
-    font-size: 3.5em;
+    font-size: 4em;
     color: #0F3B49;
     text-align: center;
     margin-bottom: 1em;
+    display: block;
 }
 
 #a-bloque .ab-p{
     width: 100%;
     display: flex;
-    padding-bottom: 9em;
+    padding: 0 6em 9em 6em;
     align-items: center;
     justify-content: space-evenly;
 }
 
 #a-bloque .a-p{
     font-size: 1.7em;
-    width: 40%;
+    width: 23em;
     border: 0.1em solid #5ABCC4;
     border-radius: 1.5em;
     padding: 2em;
@@ -287,7 +293,7 @@ h2{
 
 #a-bloque .b-p{
     font-size: 1.7em;
-    width: 40%;
+    width: 22em;
     height: auto;
     border: 0.1em solid #5ABCC4;
     border-radius: 1.5em;
@@ -301,10 +307,11 @@ h2{
 
 .container .wrapper{
     width: 60vw;
-    height: 75vh;
+    height: 70vh;
     box-shadow: 10px 10px 20px  rgba(0,0,0,0.6);
     margin: 5rem auto;
     overflow: hidden;
+    border-radius: 30px;
 }
 
 .container .wrapper-holder{
@@ -486,24 +493,26 @@ h2{
 
 #productos .container{
     background-color: #5abbc481;
-    padding: 10vh;
+    padding: 4vh;
     height: auto;
-    width: 180vh;
+    width: 158vh;
     flex-direction: column;
     display: flex;
     border-radius: 4vh;
     margin: 10vh;
 }
 
+
 #productos .producto{
     flex-direction: row;
     display: flex;
     margin: 4vh;
     gap: 4vh;
+    height: 90vh;
 }
 
 #productos img{
-    width: 60vh;
+    width: 74vh;
     border-radius: 4vh;
     box-shadow: 10px 10px 20px  rgba(0,0,0,0.6);
 }
@@ -513,27 +522,151 @@ h2{
     justify-content: center;
     align-items: center;
     display: flex;
-    padding:5vh;
+    padding: 8vh;
     text-align: center;
     border-radius: 4vh;
-    box-shadow: 10px 10px 20px  rgba(0,0,0,0.6);
-    width:100vh;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+    width: 64vh;
+}
+
+.producto-t h2{
+    font-size: 4em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.producto-t #desc{
+    font-size: 2.8em;
+    text-align: left;
+}
+
+.color-acento-soles{
+    font-family: "Racing Sans One";
+    color: #1e9ba7;
 }
 
 .producto-t p{
-    font-size:8vh ;
+    font-size: 8vh;
+    text-align: right;
+    margin-top: 1.5em;
 }
 
-#productos button{
-    font-size: 5vh;
-    padding: 2vh;
-    background-color: #71b5ca;
-    color: white;
+
+#productos-new .container-new{
+    background-color: #5abbc481;
+    padding: 4vh;
+    height: auto;
+    width: 114vh;
+    flex-direction: column-reverse;
+    display: flex;
     border-radius: 4vh;
-    border-width: 0;
-    margin-top: 8vh;
+    margin: 0 5vh;
 }
 
-#productos button:hover{
-    background-color: #0f3b4988;
+#productos-new .producto-new{
+    flex-direction: row;
+    display: flex;
+    margin: 4vh;
+    gap: 4vh;
+    height: 70vh;    
+}
+
+#productos-new .producto-new img{
+    width: 47vh;
+    border-radius: 4vh;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+}
+
+.producto-t-new{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5vh;
+    text-align: left;
+    border-radius: 4vh;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+    width: 47vh;
+    font-size: 2em;
+}
+
+.h2-new{
+    width: 100%;
+    font-family: Racing Sans One;
+    font-size: 1.8em;
+    color: #0F3B49;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.precio-new{
+    font-size: 1.7em;
+    margin-top: 1em;
+    text-align: right;
+}
+
+#productos-new{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#fb-title-aside{
+    text-decoration: none;
+    color: #0F3B49;
+    font-family: Questrial;
+    font-size: 1.7em;
+    font-variant: small-caps;
+    margin-bottom: 1em;
+}
+
+.aside{
+    width: 26em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fb-page{
+    width: 20em;
+}
+
+#acceder-form-a{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#acceder-form-b{
+    width: 15em;
+    padding: 2em;
+    font-size: 2rem;
+    height: 16em;
+    border: 3px solid #5ABCC4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#acceder-form-b input{
+    height: 2em;
+    width: 15em;
+    border-radius: 7px;
+    font-size: 0.7em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#acceder-form-b #email{
+    margin-bottom: 2em;
+}
+
+#acceder-form-b #nameuser{
+    margin-bottom: 2em;
 }
