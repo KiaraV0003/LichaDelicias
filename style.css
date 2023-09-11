@@ -327,26 +327,26 @@ h2{
 }
 
 .container #slider-img-1{
-    background-image: url(/img-svg/01.jpg);
+    background-image: url(01.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container #slider-img-2{
-    background-image: url(/img-svg/02.jpg);
+    background-image: url(02.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container #slider-img-3{
-    background-image: url(/img-svg/03.jpg);
+    background-image: url(03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container #slider-img-4{
-    background-image: url(/img-svg/04.jpg);
+    background-image: url(04.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
